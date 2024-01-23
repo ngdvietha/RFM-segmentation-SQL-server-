@@ -13,7 +13,7 @@ Dựa vào phân tích RFM ta có thể phân tập khách hàng để từ đó
 ![image](https://github.com/ngdvietha/RFM-segmentation-SQL-server-/assets/71718604/c0478b23-855b-4b34-bb7e-50b00d2cfa84)
 
 <h1>Flow chạy của dữ liệu</h1>
-- Đầu tiên các database vận hành sẽ đổ vào trong database warehouse tên là HTAUTO (Link file back up database HTAUTO phục vụ cho việc restore: https://drive.google.com/file/d/15jcwM521s50iQRC0Hs3IszqPrsb8sYy0/view?usp=sharing)<br/>
+- Đầu tiên các database vận hành sẽ đổ vào trong database warehouse tên là HTAUTO Link tập dữ liệu mẫu để test sample file back up database HTAUTO phục vụ cho việc restore: liên hệ https://www.facebook.com/ngdvietha/ <br/>
 <br/>
 - Trong database HTAUTO sẽ có các bảng input vào mô hình như sau:<br/>
   + 2 bảng dữ liệu chính: <Strong>Transaction detail</Strong> (chứa thông tin về đơn hàng của khách) và <Strong>CustomerList</Strong>  (chứa thông tin về khách hàng)<br/>
