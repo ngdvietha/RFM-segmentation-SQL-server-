@@ -1,5 +1,5 @@
 # RFM segmentation SQL server
-Phân loại khách hàng cho công ty HTAUTO dựa trên doanh số bán, tần suất bán và thời gian mua gần nhất. Sử dụng SQL server để kéo và xử lý dữ liệu phân loại khách hàng thành hơn 100 tập khác nhau tùy theo khai báo trong bảng định nghĩa <br/>
+Phân loại khách hàng cho công ty dựa trên doanh số bán, tần suất bán và thời gian mua gần nhất. Sử dụng SQL server để kéo và xử lý dữ liệu phân loại khách hàng thành hơn 100 tập khác nhau tùy theo khai báo trong bảng định nghĩa <br/>
 
 <h1>Sơ lược về phân tích RFM</h1>
 Mô hình RFM <Strong>(Recency, Frequency, Monetary)</Strong> là một mô hình phân tích khách hàng trong lĩnh vực tiếp thị và quản lý quan hệ khách hàng. Mô hình RFM đánh giá, chấm điểm các khía cạnh quan trọng của hành vi mua hàng của khách hàng dựa trên 3 yếu tố:<br/>
@@ -13,9 +13,9 @@ Dựa vào phân tích RFM ta có thể phân tập khách hàng để từ đó
 ![image](https://github.com/ngdvietha/RFM-segmentation-SQL-server-/assets/71718604/c0478b23-855b-4b34-bb7e-50b00d2cfa84)
 
 <h1>Flow chạy của dữ liệu</h1>
-- Đầu tiên các database vận hành sẽ đổ vào trong database warehouse tên là HTAUTO Link tập dữ liệu mẫu để test sample file back up database HTAUTO phục vụ cho việc restore: liên hệ https://www.facebook.com/ngdvietha/ <br/>
+- Đầu tiên các database vận hành sẽ đổ vào trong database warehouse  Link tập dữ liệu mẫu để test sample file back up database phục vụ cho việc restore: liên hệ https://www.facebook.com/ngdvietha/ <br/>
 <br/>
-- Trong database HTAUTO sẽ có các bảng input vào mô hình như sau:<br/>
+- Trong database sẽ có các bảng input vào mô hình như sau:<br/>
   + 2 bảng dữ liệu chính: <Strong>Transaction detail</Strong> (chứa thông tin về đơn hàng của khách) và <Strong>CustomerList</Strong>  (chứa thông tin về khách hàng)<br/>
   + 3 bảng khai báo định nghĩa RFM đối với từng khách hàng (tên bảng <Strong> Monetary, Frequency, Recency</Strong>)<br/>
   <br/>
